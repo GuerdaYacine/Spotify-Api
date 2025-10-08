@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>My Spotify Profile</title>
+        <link rel="stylesheet" href="public/style.css">
+        <script src="src/script.ts" type="module"></script>
+    </head>
+    <body>
+      <section id="profile">
+      <h1>Display your Spotify profile data</h1>
+      <h2>Logged in as <span id="displayName"></span></h2>
+      <span id="avatar"></span>
+      <ul>
+          <li>User ID: <span id="id"></span></li>
+          <li>Email: <span id="email"></span></li>
+          <li>Spotify URI: <a id="uri" href="#"></a></li>
+          <li>Link: <a id="url" href="#"></a></li>
+          <li>Profile Image: <span id="imgUrl"></span></li>
+      </ul>
+      </section>
+
+    <section id="artists">
+      <h2>Artistes que vous suivez</h2>
+      <div></div>
+    </section>
+
+    <section id="search-section">
+      <h1>Rechercher une musique</h1>
+      <form>
+        <input type="text" id="search-input" placeholder="Rechercher une musique par titre, artiste, album..." />
+        <button id="search-button">Rechercher</button>
+      </form>
+      <div class="searched-result"></div>
+    </section>
+
+    <section id="search-artist-section" >
+      <h1>Rechercher et suivez un auteur</h1>
+      <form>
+        <input type="text" id="search-artist-input" placeholder="Rechercher un artiste">
+        <button id="search-artist-button">Rechercher</button>
+      </form>
+      <div class="searched-artists-result"></div>
+    </section>
+
+      <section>
+        <div id="embed-iframe"></div>
+      </section>
+    </body>
+    <script src="https://open.spotify.com/embed/iframe-api/v1" async></script>
+</html>
